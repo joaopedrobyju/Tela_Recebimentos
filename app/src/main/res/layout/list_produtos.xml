@@ -16,24 +16,28 @@
             android:id="@+id/textViewImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewCod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/textViewLote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
             android:text="TextView" />
 
         <TextView

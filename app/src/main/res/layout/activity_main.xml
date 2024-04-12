@@ -8,66 +8,70 @@
 
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarMain"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:background="?attr/colorPrimary"
+        android:background="#800000"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="RECEBIMENTO"
+        app:titleTextColor="#FBFBFB" />
 
     <GridLayout
         android:id="@+id/gridLayout1"
-        android:layout_width="379dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:columnCount="5"
+        android:foregroundGravity="center_vertical|center_horizontal"
         android:orientation="horizontal"
         android:padding="16dp"
         android:rowCount="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textViewImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="ITEM"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewCod"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="NAME"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="LOTE"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewLote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textViewQtd"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="COD"
+            android:textSize="30dp" />
 
 
     </GridLayout>
 
     <ListView
         android:id="@+id/listViewTabela"
-        android:layout_width="378dp"
-        android:layout_height="240dp"
+        android:layout_width="372dp"
+        android:layout_height="236dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout1" />
@@ -76,23 +80,28 @@
         android:id="@+id/linearLayout1"
         android:layout_width="0dp"
         android:layout_height="76dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listViewTabela">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonEnviar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:backgroundTint="#800000"
+            android:text="Enviar"
+            app:rippleColor="#A80000" />
     </LinearLayout>
 
     <GridLayout
         android:id="@+id/gridLayout2"
-        android:layout_width="379dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:columnCount="5"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -106,31 +115,32 @@
             android:id="@+id/textViewImage1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="ITEM"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewCod1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="NAME"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewName1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginRight="22dp"
+            android:text="LOTE"
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/textViewLote1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textViewQtd1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="COD"
+            android:textSize="30dp" />
 
 
     </GridLayout>
